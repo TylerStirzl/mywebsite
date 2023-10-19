@@ -1,0 +1,34 @@
+/* 
+COLORS
+------
+#5C8C5C - Main Gren
+#A8BDA9 - Light Green
+#3C443C - Dark Green/Brownish
+#FFFFF - White
+#000000 - Black
+*/
+
+/* README:
+consider adding a class to all the buttons and the syling and then just create styling once in here... for now everything is #estimateButton */
+
+/* move this hero section to header.css */
+#hero {
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mainBody {
+    text-align: center;
+}
+
+.mainRow {
+    margin-top: 2%;
+}
+
+#mainBody img {
+    width: 100%;
+    height: 100%;
+}
+

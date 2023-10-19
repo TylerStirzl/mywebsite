@@ -1,0 +1,204 @@
+/* 
+COLORS
+------
+#5C8C5C - Main Gren
+#A8BDA9 - Light Green
+#3C443C - Dark Green/Brownish
+#FFFFF - White
+#000000 - Black
+*/
+
+/* README:
+consider adding a class to all the buttons and the syling and then just create styling once in here... for now everything is #estimateButton */
+
+/* move this hero section to header.css */
+#hero {
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mainBody {
+    text-align: center;
+}
+
+.mainRow {
+    margin-top: 3%;
+}
+
+#mainBody img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ESTIMATE SECTION START */
+/* ---------------------- */
+/* make this more modular */
+#estimateButton {
+    background-color: #009933;
+    color: white;
+    border: 1px solid #009933;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ /* this is the same as above, modularize */
+ /* maybe -- add "button" after each.. hover,focus,active */
+#estimateButton:hover,
+#estimateButton:focus,
+#estimateButton:active{
+    background-color: #2bc213;
+    border: 1px solid #2bc213;
+}
+
+#estimateRow #section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ESTIMATE SECTION END */
+
+
+/* SERVICE SECTION START */
+/* --------------------- */
+/* #serviceRow {
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid blue;
+}
+#serviceRow .card-group {
+    border: 1px solid blue;
+} */
+
+#serviceRow .card{
+    margin: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#serviceRow .card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* SERVICE SECTION END */
+
+/* CONTACT SECTION START */
+/* -------------------- */
+#contactRow a{
+    text-decoration: none;
+}
+
+#contactRow a {
+    text-decoration: none;
+    color: black;
+}
+
+#contactRow a:hover,
+#contactRow a:focus,
+#contactRow a:active{
+    color: #2bc213;
+    transition: background-size .15s ease-in;
+}
+
+/* CONTACT SECTION END*/
+
+
+/* BRANDS SECTION START */
+/* -------------------- */
+#brandsRow img{
+    height: 14vh;
+    width: 100%;
+    max-width: 150px;
+    min-width: 120px;
+}
+/* BRANDS SECTION END */
+
+
+/* GALLERY SECTION START */
+/* --------------------- */
+
+#carouselImage {
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+}
+
+@media (max-width: 991px) {
+    #carouselImage {
+        height: 40vh;
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+/* #carousel h5{
+    visibility: hidden;
+    color: white;
+    font-size: 3em;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+#carouselImage:hover h5{
+    visibility: visible;
+    opacity: 1;
+} */
+
+/* GALLERY SECTION END */
+
+iframe {
+    width: 90%;
+    height: 350px;
+    border: 0;
+}
+
+#aboutUsText {
+    padding-left: 25%; 
+    padding-right: 25%;
+}
+
+@media (max-width: 991px) {
+    #aboutUsText {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/* @media (max-width:1000px) and (min-width:700px) {
+    #aboutUsText{
+        padding-left: calc(15px + (100vw - 700px) * (15 - 30) / (700 -  1000));
+        padding-right: calc(15px + (100vw - 700px) * (15 - 30) / (700 -  1000));
+    }
+};  */
+
+
+/* TESTIMONIAL SECTION START */
+/* --------------------- */
+
+#testimonialsRow {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#testimonialCarousel {
+    min-height: 150px;
+}
+
+#testimonialsRow .carousel-item{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+@media (max-width: 991px) {
+    #testimonialsRow {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    #testimonialsRow .carousel-item {
+        padding-left: 11%;
+        padding-right: 11%;
+    }
+}
+
+/* TESTIMONIAL SECTION END */
