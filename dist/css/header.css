@@ -65,6 +65,13 @@ nav img {
     border-color: #009933;
 }
 
+#hero {
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* @media (max-width: 800px){
     nav img{
         height: 100px;

@@ -1,22 +1,6 @@
-/* 
-COLORS
-------
-#5C8C5C - Main Gren
-#A8BDA9 - Light Green
-#3C443C - Dark Green/Brownish
-#FFFFF - White
-#000000 - Black
-*/
 
-/* README:
-consider adding a class to all the buttons and the syling and then just create styling once in here... for now everything is #estimateButton */
-
-/* move this hero section to header.css */
-#hero {
-    height: 50vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+    font-size: 1.1rem;
 }
 
 #mainBody {
@@ -32,22 +16,19 @@ consider adding a class to all the buttons and the syling and then just create s
     height: 100%;
 }
 
+/*-------------------------------------------------------*/
 
 /* ESTIMATE SECTION START */
-/* ---------------------- */
-/* make this more modular */
-#estimateButton {
+.mainButton {
     background-color: #009933;
     color: white;
     border: 1px solid #009933;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
- /* this is the same as above, modularize */
- /* maybe -- add "button" after each.. hover,focus,active */
-#estimateButton:hover,
-#estimateButton:focus,
-#estimateButton:active{
+.mainButton:hover,
+.mainButton:focus,
+.mainButton:active{
     background-color: #2bc213;
     border: 1px solid #2bc213;
 }
@@ -59,18 +40,9 @@ consider adding a class to all the buttons and the syling and then just create s
 }
 /* ESTIMATE SECTION END */
 
+/*-------------------------------------------------------*/
 
 /* SERVICE SECTION START */
-/* --------------------- */
-/* #serviceRow {
-    background-color: whitesmoke;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 1px solid blue;
-}
-#serviceRow .card-group {
-    border: 1px solid blue;
-} */
-
 #serviceRow .card{
     margin: 1%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -79,11 +51,11 @@ consider adding a class to all the buttons and the syling and then just create s
 #serviceRow .card:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
-
 /* SERVICE SECTION END */
 
+/*-------------------------------------------------------*/
+
 /* CONTACT SECTION START */
-/* -------------------- */
 #contactRow a{
     text-decoration: none;
 }
@@ -100,23 +72,47 @@ consider adding a class to all the buttons and the syling and then just create s
     transition: background-size .15s ease-in;
 }
 
+iframe {
+    width: 90%;
+    height: 350px;
+    border: 0;
+}
+
+#contactRowInfo button {
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    #contactRowHours {
+        margin-top: 3%;
+    }
+}
 /* CONTACT SECTION END*/
 
+/*-------------------------------------------------------*/
 
 /* BRANDS SECTION START */
-/* -------------------- */
 #brandsRow img{
     height: 14vh;
     width: 100%;
-    max-width: 150px;
-    min-width: 120px;
+    max-width: 130px;
+    min-width: 100px;
+}
+
+@media (max-width: 991px) {
+    .brandSpacer {
+        display: none;
+    }
+
+    #brandsRow img {
+        height: 10vh;
+    }
 }
 /* BRANDS SECTION END */
 
+/*-------------------------------------------------------*/
 
 /* GALLERY SECTION START */
-/* --------------------- */
-
 #carouselImage {
     height: 70vh;
     width: 100%;
@@ -130,31 +126,19 @@ consider adding a class to all the buttons and the syling and then just create s
         background-size: cover;
     }
 }
-
-/* #carousel h5{
-    visibility: hidden;
-    color: white;
-    font-size: 3em;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s ease-in-out;
-}
-
-#carouselImage:hover h5{
-    visibility: visible;
-    opacity: 1;
-} */
-
 /* GALLERY SECTION END */
 
-iframe {
-    width: 90%;
-    height: 350px;
-    border: 0;
-}
+/*-------------------------------------------------------*/
 
+/* ABOUT US SECTION START */
 #aboutUsText {
     padding-left: 25%; 
     padding-right: 25%;
+    /* font-size: 1.2em; */
+}
+
+#aboutRow button {
+    width: 25%;
 }
 
 @media (max-width: 991px) {
@@ -162,19 +146,16 @@ iframe {
         padding-left: 5%;
         padding-right: 5%;
     }
-}
 
-/* @media (max-width:1000px) and (min-width:700px) {
-    #aboutUsText{
-        padding-left: calc(15px + (100vw - 700px) * (15 - 30) / (700 -  1000));
-        padding-right: calc(15px + (100vw - 700px) * (15 - 30) / (700 -  1000));
+    #aboutRow button {
+        width: 75%;
     }
-};  */
+}
+/* ABOUT US SECTION END */
 
+/*-------------------------------------------------------*/
 
 /* TESTIMONIAL SECTION START */
-/* --------------------- */
-
 #testimonialsRow {
     margin-left: 10%;
     margin-right: 10%;
@@ -196,9 +177,8 @@ iframe {
     }
 
     #testimonialsRow .carousel-item {
-        padding-left: 11%;
-        padding-right: 11%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
-
 /* TESTIMONIAL SECTION END */

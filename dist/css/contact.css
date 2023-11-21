@@ -3,13 +3,6 @@
     margin-bottom: 2%;
 }
 
-#hero {
-    height: 50vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 @media (max-width: 1300px) {
     #hero{
         height: 400px;
@@ -28,6 +21,8 @@
 
 #section1 {
     margin-right: 5%;
+
+    text-align: center;
 }
 
 #section1 a {

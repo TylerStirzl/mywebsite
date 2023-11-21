@@ -1,0 +1,119 @@
+
+.centerText {
+    text-align: center;
+}
+
+.mainDiv {
+    margin-top: 2%;
+}
+
+#estimateButton {
+    background-color: #009933;
+    color: white;
+    border: 1px solid #009933;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ /* this is the same as above, modularize */
+ /* maybe -- add "button" after each.. hover,focus,active */
+#estimateButton:hover,
+#estimateButton:focus,
+#estimateButton:active{
+    background-color: #2bc213;
+    border: 1px solid #2bc213;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+#openingMessageDiv {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.card-group {
+    margin-top: 1%;
+}
+
+.card {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+/* CONTACT SECTION START */
+/* -------------------- */
+/* #contactRow a{
+    text-decoration: none;
+}
+
+#contactRow a {
+    text-decoration: none;
+    color: black;
+}
+
+#contactRow a:hover,
+#contactRow a:focus,
+#contactRow a:active{
+    color: #2bc213;
+    transition: background-size .15s ease-in;
+} */
+
+/* CONTACT SECTION END*/
+
+/* TESTIMONIAL SECTION START */
+/* --------------------- */
+
+#testimonialsRow {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#testimonialCarousel {
+    min-height: 150px;
+}
+
+#testimonialsRow .carousel-item{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+@media (max-width: 991px) {
+    #testimonialsRow {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    #testimonialsRow .carousel-item {
+        padding-left: 11%;
+        padding-right: 11%;
+    }
+}
+
+/* TESTIMONIAL SECTION END */
+
+#replacementAndRepair {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#mainServices {
+    color: white;
+    background-color: #075220;
+}
+
+#servicesContainer div.row div{
+    /* padding-left: 3%;
+    padding-right: 3%; */
+    margin-top: 2%;
+}
+
+#servicesContainer h5{
+    font-size: 1.8em;
+}
+
+#warranty {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
