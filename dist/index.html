@@ -8,16 +8,16 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://kit.fontawesome.com/1cb0896365.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="css/header.css">
-        <link rel="stylesheet" type="text/css" href="css/footer.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="../css/header.css">
+        <link rel="stylesheet" type="text/css" href="../css/footer.css">
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
     </head>
 
-    <body class="bg-image">
+    <body>
         <nav class="navbar navbar-expand-xl navbar-custom">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/EnglundLogo.png" alt="EnglundRoofingLogo">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/EnglundLogo.png" alt="EnglundRoofingLogo">
                   </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navToggler" aria-controls="navToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,20 +25,20 @@
                 <div class="collapse navbar-collapse" id="navToggler">
                     <ul class="navbar-nav ms-auto mb-2 lg-md-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">ABOUT US</a>
+                            <a class="nav-link" href="../about.html">ABOUT US</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 COMMERCIAL
                             </a>
                             <ul class="dropdown-menu" id="dropMenu">
-                                <li><a class="dropdown-item" href="commercial.html">All Services</a></li>
+                                <li><a class="dropdown-item" href="../commercial.html">All Services -- Update navigation to page sections</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="commercial/flat-roofing.html">Flat Roofing</a></li>
-                                <li><a class="dropdown-item" href="commercial/leak-protection.html">Leak Protection</a></li>
-                                <li><a class="dropdown-item" href="commercial/repair.html">Repair</a></li>
-                                <li><a class="dropdown-item" href="commercial/replacement.html">Replacement</a></li>
-                                <li><a class="dropdown-item" href="commercial/snow-and-ice.html">Snow/Ice Removal</a></li>
+                                <li><a class="dropdown-item" href="../commercial/flat-roofing.html">Flat Roofing</a></li>
+                                <li><a class="dropdown-item" href="../commercial/leak-protection.html">Leak Protection</a></li>
+                                <li><a class="dropdown-item" href="../commercial/repair.html">Repair</a></li>
+                                <li><a class="dropdown-item" href="../commercial/replacement.html">Replacement</a></li>
+                                <li><a class="dropdown-item" href="../commercial/snow-and-ice.html">Snow & Ice Removal</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -48,36 +48,34 @@
                             <ul class="dropdown-menu" id="dropMenu">
                                 <li><a class="dropdown-item" href="residential.html">All Services</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Shingle Roofing</a></li>
-                                <li><a class="dropdown-item" href="#">Leak Protection</a></li>
-                                <li><a class="dropdown-item" href="#">Repair</a></li>
-                                <li><a class="dropdown-item" href="#">Replacement</a></li>
-                                <li><a class="dropdown-item" href="#">Snow/Ice Removal</a></li>
+                                <li><a class="dropdown-item" href="../residential/shingle-roofing.html">Shingle Roofing</a></li>
+                                <li><a class="dropdown-item" href="../residential/leak-protection.html">Leak Protection</a></li>
+                                <li><a class="dropdown-item" href="../residential/repair.html">Repair</a></li>
+                                <li><a class="dropdown-item" href="../residential/replacement.html">Replacement</a></li>
+                                <li><a class="dropdown-item" href="../residential/snow-and-ice.html">Snow/Ice Removal</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">GALLERY</a>
+                            <a class="nav-link" href="../gallery.html">GALLERY</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT US</a>
+                            <a class="nav-link" href="../contact.html">CONTACT US</a>
                         </li>
                         <hr id="navHR">
-                        <button id="headerButton" type="button" class="btn btn-outline-success">763-917-ROOF</button>
+                        <button id="headerButton" type="button" class="btn btn-outline-success" onclick="window.location='tel:6519177663'">651-917-ROOF</button>
                     </ul>
                 </div>
             </div>
         </nav>
 
         <!-- HERO -->
-        <div class="p-5 text-center bg-image" id="hero" style="background-image: url(img/roof1.jpg);">
+        <div class="p-5 text-center bg-image" id="hero" style="background-image: url(../img/roof1-60.jpg);">
             <div class="d-flex justify-content-center align-items-center h-100">
                 <div class="text-white">
-                    <h1 class="mb-3">Your Local Roofing Experts</h1>
-                    <h4 class="mb-3">Contact Us Today for a Free Estimate</h4>
-                    <button type="button" class="btn btn-primary w-25" id="estimateButton">Call Us</button>
-                    <button type="button" class="btn btn-primary w-50" id="estimateButton">Free Estimate</button>
-                    <!-- <a class="btn btn-dark btn-lg" href="#" role="button">Call Us</a>
-                    <a class="btn btn-outline-dark btn-lg" href="#" role="button">Free Estimte</a> -->
+                    <h1>Your Local Roofing Experts</h1>
+                    <h4>Contact Us Today for a Free Estimate</h4>
+                    <button type="button" class="btn btn-primary mainButton" id="#" onclick="window.location='tel:6519177663'">Call Us</button>
+                    <button type="button" class="btn btn-primary mainButton" id="#" onclick="window.location='../contact.html'">Free Estimate</button>
                 </div>
             </div>
         </div>
@@ -86,7 +84,7 @@
         <div class="container-fluid mt-3" id="mainBody">
 
             <!-- ABOUT ROW -->
-            <div class="mainRow" id="aboutRow">
+            <div class="mainRow" id="aboutRow" style=" background-color: #075220;">
                 <div class="col-md"></div>
                 <div class="col-md-auto" id="section1">
                     <h4>CLIMBING THE EXTRA STEP TO GUARANTEE THE FINEST QUALITY OF ROOFING</h4>
@@ -96,47 +94,85 @@
                         That means that each project is professionally assessed and completed on an individual basis.
                         Our exceptional craftsmanship guarantees that your roof is finalized to the finest quality.
                     </p>
-                    <button type="button" class="btn btn-primary" id="estimateButton" style="width: 50%;">More About Us -- Change Sizing</button>
+                    <button type="button" class="btn btn-primary mainButton" onclick="window.location='../about.html'">More About Us</button>
                 </div>
                 <div class="col-md"></div>
             </div>
 
             <!-- SERVICE ROW -->
-            <div class="row mainRow" id="serviceRow">
-                <h3>Services</h3>
-                <div class="card-group">
-                    <div class="card">
-                        <a href=""><img src="img/roof1.jpg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Commercial</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="stretched-link"></a>
+            <div class="container">
+                <div class="row mainRow" id="serviceRow">
+                    <!-- <h3>Services</h3> -->
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="../img/roof1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><u>Commercial Services</u></h5>
+                                <p class="card-text">
+                                    Flat Roofing <br>
+                                    Custom Metal Flashing <br>
+                                    EPDM | TPO Membrane <br>
+                                    Leak Protection <br>
+                                    Replacement or Repair <br>
+                                    Commercial Skylight
+                                </p>
+                                <a href="../commercial.html" class="stretched-link"></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="../img/roof1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><u>Residential Services</u></h5>
+                                <p class="card-text">
+                                    Shingle Roofing <br>
+                                    Asphalt Shingles <br>
+                                    EPDM Flat Roof <br>
+                                    Metal Roofing <br>
+                                    Leak Protection <br>
+                                    Replacement or Repair <br>
+                                </p>
+                                <a href="../residential.html" class="stretched-link"></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="img/roof1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Residential</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="stretched-link"></a>
+                    <div class="card-group">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Commercial Services</h5>
+                            </div>
+                            <img src="../img/roof1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <strong>
+                                    Flat Roofing <br>
+                                    Custom Metal Flashing <br>
+                                    EPDM | TPO Membrane <br>
+                                    Leak Protection <br>
+                                    Replacement or Repair <br>
+                                    Commercial Skylight
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Residential Services</h5>
+                            </div>
+                            <img src="../img/roof1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <strong>
+                                    Shingle Roofing <br>
+                                    Asphalt Shingles <br>
+                                    EPDM Flat Roof <br>
+                                    Metal Roofing <br>
+                                    Leak Protection <br>
+                                    Replacement or Repair <br>
+                                    </strong>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <!-- <div class="card">
-                        <a href=""><img src="img/roof1.jpg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Emergency Services</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href=""><img src="img/roof1.jpg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Snow & Ice</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                    </div> -->
                 </div>
             </div>
 
@@ -148,20 +184,20 @@
                 </div>
                 <div class="row" style="margin-top: 2%;">
                     <div class="col-xl"></div>
-                    <div class="col-xl">
-                        <p><strong>Phone:</strong> <a href="">763-917-7663</a></p>
-                        <p><strong>Email:</strong> <a href="">Englundroofingandsheetmetal@gmail.com</a></p>
+                    <div class="col-xl" id="contactRowInfo">
+                        <p><strong>Phone:</strong> <a href="tel:6519177663">651-917-7663</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:tyler@siteforgellc.com">Englundroofingandsheetmetal@gmail.com</a></p>
                         <p><strong>Address:</strong> <a href="https://maps.app.goo.gl/7ArteyUVky7VBzBYA" target="_blank">2907 185th Ln NE, East Bethel, MN 55092</a></p>
-                        <button type="button" class="btn btn-primary w-75" id="estimateButton">"Contact Page" -- change</button>
+                        <button type="button" class="btn btn-primary mainButton" onclick="window.location='../contact.html'">Contact Us Today</button>
                     </div>
-                    <div class="col-xl">
+                    <div class="col-xl" id="contactRowHours">
                         <p><strong>Office Hours</strong></p>
                         <p>
-                            <strong>Monday: </strong>7:00am - 6:00pm <br>
-                            <strong>Tuesday: </strong>7:00am - 6:00pm <br>
-                            <strong>Wednesday: </strong>7:00am - 6:00pm <br>
-                            <strong>Thursday: </strong>7:00am - 6:00pm <br>
-                            <strong>Friday: </strong>7:00am - 6:00pm <br>
+                            <strong>Monday: </strong>8:00am - 4:00pm <br>
+                            <strong>Tuesday: </strong>8:00am - 4:00pm <br>
+                            <strong>Wednesday: </strong>8:00am - 4:00pm <br>
+                            <strong>Thursday: </strong>8:00am - 4:00pm <br>
+                            <strong>Friday: </strong>8:00am - 4:00pm <br>
                             <p><strong>Emergency Services Available 24/7</strong></p>
                         </p>
                     </div>
@@ -175,58 +211,52 @@
             </div>
 
             <!-- ESTIMATE ROW -->
-            <div class="row mainRow" id="estimateRow">
+            <div class="row mainRow" id="estimateRow" style="background-color: lightblue;">
                 <div class="col-lg" id="section1">
                     <div>
                         <h4>Tell Us About Your Project</h4>
                         <p>Some text here about how we will give an estimate we are the best company give us a call fill out our form this is some more text here</p>
-                        <button type="button" class="btn btn-primary w-50" id="estimateButton">Free Estimate</button>
+                        <button type="button" class="btn btn-primary w-50" id="estimateButton" onclick="window.location='../contact.html'">Free Estimate</button>
                     </div>
                 </div>
                 <div class="col-lg" id="section2">
-                    <img src="img/roof3.jpg" alt="">
+                    <img src="../img/roof1.jpg" alt="">
                 </div>
             </div>
 
             <!-- BRANDS ROW -->
             <div class="row mainRow" id="brandsRow">
-                <h3>Trusted Brands</h3>
+                <h3>Trusted Brands -- have ellie look at this</h3>
                 <p>We are proud to say we always use the highest quality materials, from the most trusted roofing brands</p>
-                <p>Fix the sizing of these images, maintain square</p>
-                <div class="col"></div>
+                <div class="col brandSpacer"></div>
                 <div class="col">
-                    <a href=""><img src="img/gaf.png" alt=""></a>
+                    <a href="https://www.gaf.com/en-us" target="_blank"><img src="../img/brands/gaf.png" alt=""></a>
                 </div>
                 <div class="col">
-                    <a href=""><img src="img/muleHide.png" alt=""></a>
+                    <a href="https://www.mulehide.com/en-us/" target="_blank"><img src="../img/brands/muleHide.png" alt=""></a>
                 </div>
                 <div class="col">
-                    <a href=""><img src="img/owensCorning.png" alt="" style="background-color: white;"></a>
+                    <a href="https://www.owenscorning.com/en-us" target="_blank"><img src="../img/brands/owensCorning.png" alt="" style="background-color: white;"></a>
                 </div>
-                <div class="col"></div>
+                <div class="col brandSpacer"></div>
             </div>
 
             <!-- GALLERY ROW -->
             <div class="mainRow" id="carousel">
-                <h4>Gallery Area -- Remove This Text</h4>
+                <!-- <h4>Gallery Area</h4> -->
                 <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <!-- <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div> -->
-                    <a href="#" id="carouselOnClick">
+                    <a href="../gallery.html" id="carouselOnClick">
                         <div class="carousel-inner">
-                            <div id="carouselImage" class="carousel-item bg-image active" data-bs-interval="4000" style="background-image: url(img/roof1.jpg);">
+                            <div id="carouselImage" class="carousel-item bg-image active" data-bs-interval="4000" style="background-image: url(../img/carousel/a-2-landscape.jpg);">
                                 <div class="carousel-caption">
                                     <!-- <h5>View More</h5> -->
                                 </div>
                             </div>
-                            <div id="carouselImage" class="carousel-item bg-image" data-bs-interval="4000" style="background-image: url(img/roof2.jpg);">
+                            <div id="carouselImage" class="carousel-item bg-image" data-bs-interval="4000" style="background-image: url(../img/carousel/testingSize.png);">
                                 <div class="carousel-caption">
                                 </div>
                             </div>
-                            <div id="carouselImage" class="carousel-item bg-image" data-bs-interval="4000" style="background-image: url(img/roof3.jpg);">
+                            <div id="carouselImage" class="carousel-item bg-image" data-bs-interval="4000" style="background-image: url(../img/carousel/a-3-landscape.jpg);">
                                 <div class="carousel-caption">
                                 </div>
                             </div>
@@ -242,6 +272,31 @@
                     </button>
                 </div>
             </div>
+
+            <!-- TEST CAROUSEL -->
+            <!-- <div class="mainRow" id="testCar">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/carousel/a-1-landscape.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/carousel/a-2-landscape.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/carousel/a-3-landscape.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div> -->
 
             <!-- TESTIMONIALS ROW -->
             <div class="mainRow" id="testimonialsRow">
@@ -290,10 +345,7 @@
                     <div class="row">
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <!-- <H5 class="text-uppercase mb-4 font-weight-bold">
-                                Englund Roofing & Sheet Metal
-                            </H5> -->
-                            <img src="img/EnglundLogo.png" class="img-fluid" alt="EnglundLogo">
+                            <img src="../img/EnglundLogo.png" class="img-fluid" alt="EnglundLogo">
                             <p>Proudly serving the Twin Cities area for over 30 years.</p>
                             <p><strong>MN License: #RR780995</strong></p>
                         </div>
@@ -304,10 +356,8 @@
                         <!-- Grid column -->
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                             <H5 class="text-uppercase mb-4 font-weight-bold">Services</H5>
-                            <p><a href="#">Commercial</a></p>
-                            <p><a href="#">Residential</a></p>
-                            <p><a href="#">Emergency Services</a></p>
-                            <p><a href="#">Snow & Ice</a></p>
+                            <p><a href="../commercial.html">Commercial</a></p>
+                            <p><a href="../residential.html">Residential</a></p>
                         </div>
                         <!-- Grid column -->
 
@@ -316,11 +366,10 @@
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                             <H5 class="text-uppercase mb-4 font-weight-bold">LINKS</H5>
-                            <p><a href="#">About Us</a></p>
-                            <p><a href="#">Services</a></p>
-                            <p><a href="#">Gallery</a> </p>
-                            <p><a href="#">Contact Us</a></p>
-                            <p><a href="#">Free Estimate</a></p>
+                            <p><a href="../about.html">About Us</a></p>
+                            <p><a href="../gallery.html">Gallery</a> </p>
+                            <p><a href="../contact.html">Contact Us</a></p>
+                            <p><a href="../contact.html">Free Estimate</a></p>
                         </div>
 
                         <!-- Grid column -->
@@ -331,7 +380,7 @@
                             <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
                             <a href="https://maps.app.goo.gl/7ArteyUVky7VBzBYA" target="_blank"><p>2907 185th Lane NE<br>East Bethel, MN 55092</p></a>
                             <hr>
-                            <p>Phone: <a href="tel:763-464-5633"><strong>763-917-7663</strong></p></a>
+                            <p>Phone: <a href="tel:7634645633"><strong>651-917-7663 -- update the link num on all pages</strong></p></a>
                             <p>Email: <a href="mailto:tyler@siteforgellc.com"><strong>englundroofingandsheetmetal@gmail.com</strong></p></a>
                         </div>
                         <!-- Grid column -->
@@ -345,7 +394,7 @@
                 <!-- Section: Contact -->
                 <section id="footerContactButton">
                     <div class="row text-center">
-                        <a href="#"><h6>CONTACT US</h6></a>
+                        <a href="../contact.html"><h6>CONTACT US</h6></a>
                     </div>
                 </section>
 
@@ -359,7 +408,7 @@
                             <!-- Copyright -->
                             <div class="p-3">
                                 © 2023 Copyright:
-                                <a class="text-white" href="index.html">Englund Roofing & Sheet Metal</a>
+                                <a class="text-white" href="../index.html">Englund Roofing & Sheet Metal</a>
                             </div>
                             <!-- Copyright -->
                         </div>
@@ -401,4 +450,6 @@
         </div>
 
     </body>
+    
+    <script src="../js/index.js"></script>
 </html>

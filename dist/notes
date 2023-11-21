@@ -3,17 +3,23 @@ NOTES:
 
 -- TODO --
 finish contact form... labels, design, wording, captcha, sendto email
-ALL links... navbar, footer, in page
+ALL LINKS
 metadata in header
 remove inline CSS, add to style sheets
 organize style sheets
 swap images for real ones
-finish "Test" section in the index footer
 seo optimization
-figure navigating for commercial/residential
 add alts to photos
 background vector sizing -- find a free image to use for this
 sizing and maintain-ratio for all images on the site
+phone sizing
+clickable image in footer
+phone number: 651-917-7663
+colors
+testimonial button which opens a modal form to submit one
+button ids and styling
+individual css pages.. look into if this is the best way (SEO)
+ids, classes, etc... especially for the stuff i pulled from other sources
 
 -------------------------------------------------------
 
