@@ -1,0 +1,102 @@
+body {
+    font-size: 1.1rem;
+}
+
+#mainBody {
+    text-align: center;
+}
+
+#buttonGroup {
+    margin-left: 10%;
+    margin-right: 10%;
+    /* background-color: whitesmoke; */
+    margin-top: 2%;
+    padding-bottom: 1.5%;
+}
+
+#projectTypes button {
+    background-color: #009933;
+    color: white;
+    border: 1px solid #009933;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    #projectTypes button {
+        margin-top: 2%;
+        width: 100%;
+    }
+}
+
+#commercialButton:hover,
+#commercialButton:focus,
+#commercialButton:active{
+    background-color: #2bc213;
+    border: 1px solid #2bc213;
+}
+
+#residentialButton:hover,
+#residentialButton:focus,
+#residentialButton:active{
+    background-color: #2bc213;
+    border: 1px solid #2bc213;
+}
+
+#allProjectsButton:hover,
+#allProjectsButton:focus,
+#allProjectsButton:active{
+    background-color: #2bc213;
+    border: 1px solid #2bc213;
+}
+
+#projects {
+    margin-top: 2%;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+@media (max-width: 991px) {
+    #projects {
+        margin-top: 4%;
+    }
+}
+
+#projects div.row img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    size: cover;
+}
+
+#projects div.row div {
+    margin-bottom: 2%;
+}
+
+#projects div.row div:hover .overlay{
+    height: 30%;
+    opacity: .9;
+}
+
+.overlay {
+    position: relative;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+    background-color: #009933;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

@@ -1,0 +1,23 @@
+#hero {
+    height: 35vh;
+}
+
+@media (max-width: 991px) {
+    #hero {
+        height: 30vh;
+    }
+}
+
+.mainButton {
+    background-color: #009933;
+    color: white;
+    border: 1px solid #009933;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mainButton:hover,
+.mainButton:focus,
+.mainButton:active{
+    background-color: #2bc213;
+    border: 1px solid #2bc213;
+}
