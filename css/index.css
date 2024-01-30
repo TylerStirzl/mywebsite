@@ -9,6 +9,7 @@ body {
 
 .mainRow {
     margin-top: 3%;
+    margin-bottom: 2%;
 }
 
 /* #mainBody img {
@@ -337,3 +338,15 @@ iframe {
     }
 }
 /* REPLACEMENT SECTION END */
+
+@media (max-width: 991px) {
+    .mainRow {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    #brandsRow {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
