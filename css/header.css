@@ -1,0 +1,117 @@
+.navbar-custom{
+    /* background-color: #A8BDA9; */
+    /* background-color: #659067; */
+    /* background-color: rgb(68, 123, 79); */
+    /* background-color: #A8BDA9; */
+    /* background-color: #075220; */
+     /* background: #08361E; */
+
+     background-color: #41ad49;
+     background-color: #54a05f;
+}
+
+/* old - not being used in index... check others */
+#navBrandId{
+    color: black;
+    /* font-weight: bold;
+    font-size: large; */
+}
+
+@media (max-width: 9999px) {
+    a.navbar-brand{
+        padding-left: 3%;
+    }
+}
+
+@media (max-width: 991px) {
+    a.navbar-brand{
+        padding-left: 0%;
+    }
+}
+
+#navToggler a:hover,
+#navToggler a:focus,
+#navToggler a:active{
+    background-size: 75% 0.1em;
+    color: white !important;
+    transition: background-size .15s ease-in;
+}
+
+@media (max-width: 1200px){
+    #navToggler a:hover,
+    #navToggler a:focus,
+    #navToggler a:active{
+        background-size: 0% 0.1em;
+        color: white !important;
+        transition: none;
+    }
+}
+
+#navToggler a {
+    color: black;
+    text-decoration: none;
+    background-image: linear-gradient(white, white);
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    font-size: 1.15em;
+}
+
+/* HOVER DROPDOWN ITEMS */
+#dropMenu a:hover{
+    color: #009933 !important;
+    background-color: whitesmoke;
+}
+
+/* HOVER */
+.nav-link:hover{
+    color: white;
+}
+
+nav img {
+    height: 100px;
+    width: 250px;
+}
+
+#headerButton {
+    color: white;
+    border-color: white;
+}
+
+#headerButton:visited,
+#headerButton:focus,
+#headerButton:link,
+#headerButton:hover,
+#headerButton:active {
+    border-color: #009933;
+}
+
+#hero {
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero button {
+    width:30%
+}
+
+@media (max-width: 991px) {
+    #hero button {
+        width:40%
+    }
+}
+
+/* @media (max-width: 800px){
+    nav img{
+        height: 100px;
+        width: 250px;
+    }
+} */
+
+/* nav {
+    padding-top: 1% !important;
+    padding-bottom: 1% !important; 
+} */
