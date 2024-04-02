@@ -1,11 +1,13 @@
 footer{
     /* background-color: #A8BDA9; */
-    background-color: #659067;
+    /* background-color: #659067; */
+    background-color: black;
+    color: white;
     margin-top: 2%;
 }
 
 footer section a {
-    color: black;
+    color: white;
     text-decoration: none;
     background-image: linear-gradient(white, white);
     background-size: 0% 0.1em;
@@ -31,8 +33,12 @@ footer section a {
 #footerContactSection a:hover,
 #footerContactSection a:focus,
 #footerContactSection a:active{
+    /* color: white !important;
+    background: none; */
+
+    background-size: 100% 0.1em;
     color: white !important;
-    background: none;
+    transition: background-size .15s ease-in;
 }
 
 #bottomBanner{
