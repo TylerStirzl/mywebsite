@@ -1,0 +1,35 @@
+#hero {
+    height: 35vh;
+}
+
+body {
+    font-size: 1.1em;
+}
+
+@media (max-width: 991px) {
+    #hero {
+        height: 30vh;
+    }
+}
+
+.mainButton {
+    background-color: #149914;
+    color: white;
+    border: 1px solid #149914;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mainButton:hover,
+.mainButton:focus,
+.mainButton:active{
+    background-color: #2bc213;
+    border: 1px solid #2bc213;
+}
+
+#fader {
+    opacity:1;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}

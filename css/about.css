@@ -1,0 +1,219 @@
+/* GLOBAL START */
+body {
+    font-size: 1.1rem;
+}
+
+#mainBody {
+    text-align: center;
+}
+
+.mainRow {
+    margin-top: 3%;
+}
+
+/* #mainBody img {
+    width: 100%;
+    height: 100%;
+} */
+
+.mainButton {
+    background-color: #149914;
+    color: white;
+    border: 1px solid #149914;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mainButton:hover,
+.mainButton:focus,
+.mainButton:active{
+    background-color: #2bc213;
+    border: 1px solid #2bc213;
+}
+
+#hero {
+    height: 60vh;
+    width: 100%;
+    background-image: url("../img/truckLarge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 991px) {
+    #hero {
+        height: 35vh;
+        background-image: url("../img/truckSmall.jpg")
+    }
+}
+
+/* GLOBAL END */
+
+/*-------------------------------------------------------*/
+
+/* COMPANY BACKGROUND SECTION START */
+#companyBackgroundText {
+    padding-left: 25%; 
+    padding-right: 25%;
+    font-size: 1.08em;
+    margin-top: 2%;
+}
+
+#companyBackgroundRow button {
+    width: 50%;
+}
+
+@media (max-width: 991px) {
+    #companyBackgroundText {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #companyBackgroundRow button {
+        width: 75%;
+    }
+}
+
+#companyBackgroundRow h4 {
+    font-size: 1.8rem;
+}
+
+#companyBackgroundRow h5 {
+    font-size: 1.5rem;
+}
+
+#companyBackgroundRow a{
+    text-decoration: none;
+    color: #149914;
+}
+
+#companyBackgroundRow a:hover{
+    text-decoration: none;
+    color: #2bc213;
+}
+/* ABOUT US SECTION END */
+
+/*-------------------------------------------------------*/
+
+/* CONTACT SECTION START */
+#contactRow a{
+    text-decoration: none;
+}
+
+#contactRow a {
+    text-decoration: none;
+    color: black;
+}
+
+#contactRow a:hover,
+#contactRow a:focus,
+#contactRow a:active{
+    color: #2bc213;
+    transition: background-size .15s ease-in;
+}
+
+iframe {
+    margin-top: 3%;
+    width: 70%;
+    height: 350px;
+    border: 0;
+}
+
+@media (max-width: 991px) {
+    iframe {
+        margin-top: 5%;
+        width: 100%;
+    }
+}
+
+.hideLarge {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    #contactRow {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    .hideSmall {
+        display: none;
+    }
+
+    .hideLarge {
+        display: block;
+    }
+
+    button.hideLarge {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+#contactRowInfo button {
+    width: 100%;
+}
+/* CONTACT SECTION END*/
+
+/*-------------------------------------------------------*/
+
+/* TESTIMONIAL SECTION START */
+#testimonialsRow {
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+#testimonialCarousel {
+    min-height: 150px;
+}
+
+#testimonialsRow .carousel-item{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+@media (max-width: 991px) {
+    #testimonialsRow {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    #testimonialsRow .carousel-item {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+/* TESTIMONIAL SECTION END */
+
+/*-------------------------------------------------------*/
+
+/* TEAM SECTION START */
+
+#teamRow h3 {
+    margin-bottom: 2%;
+    font-size: 1.8em;
+}
+
+#teamRow div{
+    font-size: 1.05em;
+}
+
+@media (max-width: 991px) {
+    #teamRow {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #teamRow div {
+        margin-bottom: 4%;
+    }
+}
+
+/* TEAM SECTION END */
+
+#fader {
+    opacity:1;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
