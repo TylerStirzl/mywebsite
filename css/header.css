@@ -85,24 +85,12 @@ nav img {
     color: black;
 }
 
-/* #hero {
+#hero {
     height: 70vh;
     width: 100%;
     background-image: url("../img/shopTest.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-} */
-
-#hero {
-    height: 75vh;
-    width: 100%;
-    background-image: url("../img/shopTest.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#hero div {
-    padding-bottom: 7.5%;
 }
 
 @media (max-width: 991px) {
