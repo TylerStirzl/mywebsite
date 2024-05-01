@@ -156,7 +156,8 @@ function sendEmail(name, company, email, phone, address, city, state, zip, info,
 
     request.send(params);
 
-    alert("Form Submitted, we will be in contact with you soon!");
+    document.getElementById('modalButton').click();
+    //alert("Thank you for reaching out, we will get back to you soon!");
     scrollTop();
     location.reload();
 }
