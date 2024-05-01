@@ -86,17 +86,17 @@ nav img {
 }
 
 #hero {
-    height: 70vh;
+    height: 60vh;
     width: 100%;
-    background-image: url("../img/shopTest.jpg");
+    background-image: url("../img/truckLarge_dark.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
+} 
 
 @media (max-width: 991px) {
     #hero {
         height: 35vh;
-        background-image: url("../img/shopSmall_dark.jpg")
+        background-image: url("../img/truckSmall_dark.jpg")
     }
 }
 
