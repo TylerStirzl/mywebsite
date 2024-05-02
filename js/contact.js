@@ -1,5 +1,4 @@
 
-
 function formSubmit(){
     var validForm = false;
 
@@ -12,22 +11,24 @@ function formSubmit(){
     var state = document.getElementById('inputState').value;
     var zip = document.getElementById('inputZip').value;
     var info = document.getElementById('inputInformation').value;
+    var find = document.getElementById('inputFind').value;
     var other = document.getElementById('inputOther').value;
     
     // console.log(input + " " + company + " " + email + " " + phone + " " + address + " " + city + " " + state + " " + zip + " " + info + " " + other);
-    validForm = validateForm(name, email, phone, info);
+    validForm = validateForm(name, email, phone, info, find);
 
     if(validForm){
-        sendEmail(name, company, email, phone, address, city, state, zip, info, other);
+        sendEmail(name, company, email, phone, address, city, state, zip, info, find, other);
     }
 }
 
-function validateForm(name, email, phone, info){
+function validateForm(name, email, phone, info, find){
 
     var valName;
     var valEmail;
     var valPhone;
     var valInfo;
+    var valFind;
     var formValid;
 
     // nane validation
@@ -70,14 +71,21 @@ function validateForm(name, email, phone, info){
         valInfo = true;
     }
 
-    formValid = postValidation(valName, valEmail, valPhone, valInfo);
+    // find validation
+    if(find == ""){
+        valFind = false;
+    }else{
+        valFind = true;
+    }
+
+    formValid = postValidation(valName, valEmail, valPhone, valInfo, valFind);
 
     if(formValid){
         return true;
     }
 }
 
-function postValidation(name, email, phone, info){
+function postValidation(name, email, phone, info, find){
     error = false;
 
     if(!name){
@@ -94,6 +102,10 @@ function postValidation(name, email, phone, info){
     }
     if(!info){
         validationError('inputInformation');
+        error = true;
+    }
+    if(!find){
+        validationError('inputFind');
         error = true;
     }
 
@@ -133,10 +145,10 @@ var data_js = {
     "access_token": "uwttnrufw7g3an5fmg273orp"
 };
 
-function sendEmail(name, company, email, phone, address, city, state, zip, info, other){
+function sendEmail(name, company, email, phone, address, city, state, zip, info, find, other){
     var newPhone = phone[0] + phone[1] + phone[2] + "-" + phone[3] + phone[4] + phone[5] + "-" + phone[6] + phone[7] + phone[8] + phone[9];
     var subject = "Englund Roofing - Contact Form";
-    var message = "Name: " + name + "\nCompany: " + company + "\nEmail: " + email + "\nPhone: " + newPhone + "\nAddress: " + address + ", " + city + ", " + state + " " + zip + "\nArea of Interest: " + info + "\nAdditional Info: " + other;
+    var message = "Name: " + name + "\nCompany: " + company + "\nEmail: " + email + "\nPhone: " + newPhone + "\nAddress: " + address + ", " + city + ", " + state + " " + zip + "\nArea of Interest: " + info + "\nHow did you find us: " + find + "\nAdditional Info: " + other;
     data_js['subject'] = subject;
     data_js['text'] = message;
     var params = toParams(data_js);
@@ -157,9 +169,9 @@ function sendEmail(name, company, email, phone, address, city, state, zip, info,
     request.send(params);
 
     document.getElementById('modalButton').click();
-    //alert("Thank you for reaching out, we will get back to you soon!");
     scrollTop();
-    location.reload();
+    
+    clearForm();
 }
 
 function toParams(data_js) {
@@ -173,4 +185,18 @@ function toParams(data_js) {
 
 function scrollTop(){
     document.getElementById('section2').scrollIntoView();
+}
+
+function clearForm(){
+    document.getElementById('inputName').value = "";
+    document.getElementById('inputCompany').value = "";
+    document.getElementById('inputEmail').value = "";
+    document.getElementById('inputPhone').value = "";
+    document.getElementById('inputAddress').value = "";
+    document.getElementById('inputCity').value = "";
+    document.getElementById('inputState').value = "";
+    document.getElementById('inputZip').value = "";
+    document.getElementById('inputInformation').value = "";
+    document.getElementById('inputFind').value = "";
+    document.getElementById('inputOther').value = "";
 }
