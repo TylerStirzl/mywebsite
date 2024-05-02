@@ -96,7 +96,7 @@ nav img {
 @media (max-width: 991px) {
     #hero {
         height: 35vh;
-        background-image: url("../img/truckSmall_dark_test.jpg")
+        background-image: url("../img/truckSmall_dark.jpg")
     }
 }
 
