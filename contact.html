@@ -95,7 +95,7 @@
                     <hr>
                     <form class="row g-3" id="form">
                         <div class="col-12">
-                            <label for="inputName" class="form-label">Full Name</label>
+                            <label for="inputName" class="form-label">Name</label>
                             <input type="text" maxlength="30" class="form-control" id="inputName" onchange="resetBorder('inputName')">
                         </div>
                         <div class="col-12">
@@ -130,7 +130,7 @@
                             <label for="inputZip" class="form-label">Zip</label>
                             <input type="text" maxlength="5" class="form-control" id="inputZip">
                         </div>
-                        <div class="col-12">
+                        <div class="col-md-6">
                             <label for="inputInformation" class="form-label">Area of Interest</label>
                             <select id="inputInformation" class="form-select" onchange="resetBorder('inputInformation')">
                                 <option value=""></option>
@@ -142,6 +142,17 @@
                                 <option>Repair</option>
                                 <option>Other</option>
                                 <option>General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputFind" class="form-label">How did you find us?</label>
+                            <select id="inputFind" class="form-select" onchange="resetBorder('inputFind')">
+                                <option value=""></option>
+                                <option>Social Media</option>
+                                <option>Peer Referral</option>
+                                <option>Google Search</option>
+                                <option>Jobsite</option>
+                                <option>Other</option>
                             </select>
                         </div>
                         <div class="mb-3">
